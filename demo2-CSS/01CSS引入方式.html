@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input{
+            width: 60px;
+            height: 30px; 
+            background-color: aquamarine; 
+            color:aliceblue;
+            font-size: 20px;
+            font-family: 隶书;
+            border: 2px solid green;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <!--
+        方式1：行内式
+        通过元素的style属性引入样式
+    -->
+    <!-- <input type="button" value="按钮" onclick="alert('你好')"
+        style="
+            width: 60px;
+            height: 30px; 
+            background-color: aquamarine; 
+            color:aliceblue;
+            font-size: 20px;
+            font-family: 隶书;
+            border: 2px solid green;
+            border-radius: 5px;
+        "
+    > -->
+    <!--
+        方式二：内嵌式
+        通过在head标签中的style标签定义本页面的公共样式
+        通过选择器来确定样式的作用元素
+    -->
+    <input type="button" value="按钮" onclick="alert('你好')">  
+
+    <!--
+        方式三：外部式
+        通过引入外部的css文件来引入样式
+        通过选择器来确定样式的作用元素
+    -->
+</body>
+</html>
