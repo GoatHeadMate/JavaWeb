@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+        form
+            action ： 表单提交的地址
+                url
+                绝对路径
+                相对路径
+            method ： 表单提交的方式
+                1、get 参数会以url的形式发送给服务器
+                2、post 参数以表单的形式发送给服务器
+                2、post
+                3、put
+                4、delete
+                5、head
+                6、options
+                7、trace
+                8、connect
+        表单项标签
+        表单项标签一定要定义name属性，该属性用于明确提交时的参数名
+            input
+                type ： 表单项的类型
+                    1、text
+                    2、password
+                    3、submit
+                    4、reset
+                    5、button
+                    6、radio
+                    7、checkbox
+                    8、file
+                    9、hidden
+                    10、image
+                    11、button
+                    12、color
+                    13、date
+    -->
+    <form action="08welcome.html" method="get">
+        <!-- 表单项标签，用户输入信息的标签 -->
+        用户名：<input type="text" name="username" placeholder="请输入用户名" /><br>
+        密 码：<input type="password" name="password" placeholder="请输入密码" /><br>
+        性别：
+            <input type="radio" name="sex" value="男" checked />男
+            <input type="radio" name="sex" value="女" />女<br>           <!-- 多个单选框使用相同的互斥属性值-->
+        爱好：
+            <input type="checkbox" name="hobby" value="足球" checked />足球
+            <input type="checkbox" name="hobby" value="篮球" />篮球
+            <input type="checkbox" name="hobby" value="游泳" />游泳<br>
+        <input type="submit" value="登录" />
+        <input type="reset" value="重置" />
+        
+
+    </form>
+</body>
+</html>
