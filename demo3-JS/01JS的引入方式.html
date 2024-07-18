@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .btn1{
+            width: 150px;
+            height: 40px;
+            background-color: red;
+            color: white;
+            border: 3px solid red;
+            border-radius: 10px;
+            font-size: 24px;
+            font-family: '隶书';
+        }
+    </style>
+    <!--
+        1、嵌入式
+        在head标签中，使用script标签引入JS文件
+        2、引入外部js文件
+
+        1、一个html页面中，可以引入多个js文件
+        
+    -->
+    <!-- <script>
+        /*
+            JS如何声明函数
+            函数如何和单机按钮行为绑定到一起
+            如何弹出一个提示框 
+        */
+        function surprise(){
+            alert('恭喜你，你发现了惊喜！')
+        }
+    </script> -->
+    <script src="JavaScript/button.js" type="text/JavaScript"></script>
+</head>
+<body>
+    <button class="btn1" ondblclick="surprise()">点我有惊喜</button>
+    <button class="btn1" ondblclick="surprise()">点我有惊喜</button>
+</body>
+</html>
