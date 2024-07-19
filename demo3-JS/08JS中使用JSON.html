@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /*
+            JSON格式的语法
+            var personStr='{"属性名":"属性值"}'
+            属性名必须用双引号括起来
+        */
+        var personStr = '{"name":"张三","age":18,"dog":{"name":"旺财","age":3},"idol":["李四","王五","赵六"],"friend":[{"name":"张三","age":18},{"name":"李四","age":18},{"name":"王五","age":18}]}';
+
+        // 通过JSON.parse()方法将字符串转为对象
+        var person=JSON.parse(personStr)
+        console.log(personStr)
+        console.log(person)
+        console.log(person.name)
+        console.log(person.dog.name)
+        console.log(person.idol[0])
+        for(var i=0;i<person.friend.length;i++){
+            console.log(person.friend[i].name)
+        }
+        // 通过JSON.stringify()方法将对象转为字符串
+        var personStr2=JSON.stringify(person)
+        console.log(personStr2)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
