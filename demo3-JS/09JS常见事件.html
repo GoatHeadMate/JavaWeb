@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function fun1(){
+            alert('点击了')
+        }
+        function fun2(){
+            alert('点击了')
+        }
+        function func3(){
+            alert('双击了')
+        }
+        function func4(){
+            alert('鼠标悬停了')
+        }
+        function func5(){
+            alert('鼠标移动了')
+        }
+        function func6(){
+            alert('鼠标离开了')
+        }
+    </script>
+</head>
+<body>
+    <input 
+        type="button" 
+        value="点击" 
+        onclick="fun1(),fun2()"
+        ondblclick="func3()"
+    >
+    <br>
+    <img src="img/下载.png" onmouseover="func4()" onmousemove="func5()" onmouseout="func6()">
+
+    <form action="" method="">
+        用户昵称:<input type="text" name="nickname" ><br>
+        用户账号:<input type="text" name="account"><br>
+        <input type="submit" value="提交">
+        <input type="reset" value="重置">
+    </form>
+</body>
+</html>
