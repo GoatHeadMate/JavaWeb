@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/Web-all.iml" filepath="$PROJECT_DIR$/.idea/Web-all.iml" />
       <module fileurl="file://$PROJECT_DIR$/demo01-web/demo01-web.iml" filepath="$PROJECT_DIR$/demo01-web/demo01-web.iml" />
       <module fileurl="file://$PROJECT_DIR$/demo02-web/demo02-web.iml" filepath="$PROJECT_DIR$/demo02-web/demo02-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/schedule-system/schedule-system.iml" filepath="$PROJECT_DIR$/schedule-system/schedule-system.iml" />
     </modules>
   </component>
 </project>
